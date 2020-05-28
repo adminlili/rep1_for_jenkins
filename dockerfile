@@ -17,7 +17,7 @@ EXPOSE 80/tcp
 # rewrite FILES in dir /var/www/ by ./html on remote container
 # COPY works only with files!!!
 COPY ./index.html /var/www/html/index.html
-COPY ./apache2.conf /etc/apache2.conf
+COPY ./apache2.conf /etc/apache2/apache2.conf
 
 # the ability to stop term with Ctrl+C
 STOPSIGNAL SIGTERM
